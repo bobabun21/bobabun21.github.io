@@ -37,3 +37,16 @@
     transform: rotate(360deg);
   }
 }
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.waving-hand-icon, 
+.linkedIn-icon {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row: 1;
+  font-size: smaller;
+}

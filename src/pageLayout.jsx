@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
-import AboutMeSkeleton from './aboutMeSections';
+import AboutMe from './aboutMeSections';
 
 export default function ProfilePhoto({ photo }) {
   return (
@@ -28,7 +28,7 @@ export default function ProfilePhoto({ photo }) {
         }}
         variant='square'
       />
-      <AboutMeSkeleton />
+      <AboutMe />
     </Box>
   );
 }
