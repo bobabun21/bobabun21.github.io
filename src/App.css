@@ -35,35 +35,64 @@
 .about-me-container {
   display: grid;
   grid-template-rows: auto auto; /* Two rows: one for header, one for icons */
-  grid-template-columns: 1fr 1fr; /* Two columns for icons in the second row */
+  grid-template-columns: 1fr; /* Single column to span the full width */
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center; /* Center align items in the grid */
 }
 
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for icons */
+  grid-row: 3; /* Place in the second row */
+  padding: 10px;
+  gap: 10px; /* Space between icons */
+  justify-content: center; /* Center icons horizontally */
+}
+
 .name-header {
   grid-row: 1; /* Place in the first row */
-  grid-column: span 2; /* Span across both columns */
+  grid-column: 1; /* Single column */
   padding: 10px;
   text-align: center; /* Center text horizontally */
   font-size: 70px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #642c1e;
 }
 
-.linkedIn-icon {
-  color: '#5f6219';
-  font-size: medium;
-  padding: 10px;
-  animation: pulsate 3s; /* Animation on hover */
+.role-description {
+  color: #642c1e;
+  text-align: center;
+  font-size: 40px;
 }
 
 .waving-hand-icon {
-  color: '#5f6219';
   font-size: medium;
   padding: 10px;
-  animation: wave 2s; /* Animation on hover */
+}
+
+.waving-hand-icon :hover {
+  animation: wave 2s; /* Continuous waving animation */
   transform-origin: bottom center; /* Set transform origin */
+}
+
+.linkedIn-icon {
+  font-size: medium;
+  padding: 10px;
+  animation: pulsate 3s infinite; /* Continuous pulsating animation */
+}
+
+.popup-text {
+  position: absolute; /* Position relative to the icon container */
+  top: 100%; /* Place it just below the icon */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+.waving-hand-icon:hover .popup-text {
+  opacity: 1; /* Show text on hover */
 }
 
 .MuiTouchRipple-root {
