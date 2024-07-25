@@ -1,40 +1,34 @@
 .App {
-  text-align: center;
   background-color: #a8ad77;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+@keyframes wave {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -43,10 +37,27 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.waving-hand-icon, 
-.linkedIn-icon {
+.waving-hand-icon {
+  color: '#5f6219';
   display: grid;
   grid-template-columns: auto;
   grid-row: 1;
   font-size: smaller;
+}
+
+.waving-hand-icon :hover {
+  animation: wave 2s;
+  transform-origin: bottom center;
+}
+
+.linkedIn-icon {
+  color: '#5f6219';
+  display: grid;
+  grid-template-columns: auto;
+  grid-row: 1;
+  font-size: smaller;
+}
+
+.linkedIn-icon :hover {
+  animation: pulsate 1s;
 }

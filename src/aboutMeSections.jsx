@@ -1,4 +1,3 @@
-// import { Skeleton } from '@mui/material';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { IconButton, Box } from '@mui/material';
@@ -13,26 +12,27 @@ export default function AboutMe() {
   return (
     <Box className='about-me-container'>
       <IconButton
-        className='waving-hand-icon'
         onClick={handleClick}
         aria-label='learn more about me'
       >
+        <WavingHandIcon
+          className='waving-hand-icon'
+        />
         <div>
-          <WavingHandIcon sx={{ color: '#5f6219' }} />
           <p>Learn more about me</p>
         </div>
       </IconButton>
       <IconButton
-        className='linkedIn-icon'
         onClick={handleClick}
         aria-label='learn more about me'
       >
+        <LinkedInIcon
+          className='linkedIn-icon'
+        />
         <div>
-          <LinkedInIcon sx={{ color: '#5f6219' }} />
           <p>Connect with me on LinkedIn</p>
         </div>
       </IconButton>
     </Box>
-
   );
 }
