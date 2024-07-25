@@ -28,6 +28,13 @@
   }
 }
 
+h2 {
+  border-radius: 30px;
+  background-color: #d7dda2;
+  width: 1000px;
+  padding: 10%;
+}
+
 .App {
   background-color: #a8ad77;
 }
@@ -38,24 +45,53 @@
   grid-template-columns: 1fr; /* Single column to span the full width */
   width: 100%;
   height: 100%;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center; /* Center align items in the grid */
+}
+
+.button-highlight {
+  border: 2px solid transparent; /* Initial border */
+  border-radius: 50%; /* Optional: makes the border rounded */
+  transition: border-color 0.3s ease, border-width 0.3s ease; /* Smooth transition */
+}
+
+.button-highlight:hover {
+  border-color: #642c1e;
+  border-width: 4px;
+  border-style: solid;
 }
 
 .icon-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns for icons */
-  grid-row: 3; /* Place in the second row */
+  grid-row: 3;
+  padding: 100px;
+  gap: 10px;
+}
+
+.linkedIn-icon,
+.waving-hand-icon {
+  font-size: medium;
   padding: 10px;
-  gap: 10px; /* Space between icons */
-  justify-content: center; /* Center icons horizontally */
+}
+
+.linkedIn-icon {
+  animation: pulsate 3s;
+}
+
+.MuiTouchRipple-root {
+  display: none !important;
+}
+
+.MuiButtonBase-root {
+  display: inline-flex !important;
+  background-color: #d7dda2 !important;
+  border-radius: 30px !important;
 }
 
 .name-header {
-  grid-row: 1; /* Place in the first row */
-  grid-column: 1; /* Single column */
-  padding: 10px;
-  text-align: center; /* Center text horizontally */
+  grid-row: 1; 
+  grid-column: 1; 
+  text-align: center; 
   font-size: 70px;
   color: #642c1e;
 }
@@ -63,38 +99,17 @@
 .role-description {
   color: #642c1e;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.role-container {
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  margin: auto;
 }
 
 .waving-hand-icon {
-  font-size: medium;
-  padding: 10px;
-}
-
-.waving-hand-icon :hover {
-  animation: wave 2s; /* Continuous waving animation */
-  transform-origin: bottom center; /* Set transform origin */
-}
-
-.linkedIn-icon {
-  font-size: medium;
-  padding: 10px;
-  animation: pulsate 3s infinite; /* Continuous pulsating animation */
-}
-
-.popup-text {
-  position: absolute; /* Position relative to the icon container */
-  top: 100%; /* Place it just below the icon */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
-}
-
-.waving-hand-icon:hover .popup-text {
-  opacity: 1; /* Show text on hover */
-}
-
-.MuiTouchRipple-root {
-  display: none !important;
+  animation: wave 2s;
+  transform-origin: bottom center;
 }
