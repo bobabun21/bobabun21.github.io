@@ -11,6 +11,7 @@ function handleClick() {
 export default function AboutMe() {
   return (
     <Box className='about-me-container'>
+      <h2 className='name-header'>Kelsey Belanger</h2>
       <IconButton
         onClick={handleClick}
         aria-label='learn more about me'
