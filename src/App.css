@@ -30,16 +30,8 @@
 
 h1, h2 {
   border-radius: 30px;
-  background-color: #d7dda2;
   padding: 2%;
   margin: 0 auto; /* Center the element */
-}
-
-h1 {
-  width: 50%;
-}
-
-h2 {
   width: 50%;
 }
 
@@ -56,25 +48,46 @@ h2 {
   justify-content: space-evenly;
   align-items: center; /* Center align items in the grid */
   gap: 20px;
+  padding: 50px;
 }
 
 .button-highlight {
-  border: 2px solid transparent; /* Initial border */
-  border-radius: 50%; /* Optional: makes the border rounded */
-  transition: border-color 0.3s ease, border-width 0.3s ease; /* Smooth transition */
+  display: inline-flex;
+  align-items: center;
+  background-color: #d7dda2;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: border-color 1s ease, border-width 1s ease;
 }
 
-.button-highlight:hover {
+.button-highlight:hover,
+.button-wave:hover {
   border-color: #642c1e;
-  border-width: 4px;
+  border-width: 3px;
   border-style: solid;
+}
+
+.button-wave {
+  background-color: #d7dda2;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: border-color 0.1s ease, border-width 0.1s ease;
+}
+
+.button-highlight:hover .waving-hand-icon {
+  animation: wave 2s infinite;
 }
 
 .icon-container {
   display: grid;
   grid-row: 3;
-  padding: 100px;
+  padding: 50px;
   gap: 10px;
+  padding-top: 5%;
 }
 
 .linkedIn-icon,
@@ -83,8 +96,8 @@ h2 {
   padding: 10px;
 }
 
-.linkedIn-icon {
-  animation: pulsate 3s;
+.button-highlight:hover .linkedIn-icon {
+  animation: pulsate 3s infinite;
 }
 
 .MuiTouchRipple-root {
@@ -103,6 +116,7 @@ h2 {
   text-align: center; 
   font-size: 70px;
   color: #642c1e;
+  width: 800px;
 }
 
 .role-description {
@@ -114,10 +128,5 @@ h2 {
   padding: 30px;
   margin: auto;
   border-radius: 30px;
-  background-color: #d7dda2;
-}
-
-.waving-hand-icon {
-  animation: wave 2s;
-  transform-origin: bottom center;
+  background-color: #ceac91;
 }

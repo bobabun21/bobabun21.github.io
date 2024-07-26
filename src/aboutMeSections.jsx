@@ -23,10 +23,7 @@ export default function AboutMe() {
           <p>Connect with Kelsey on LinkedIn</p>
         </IconButton>
       </Box>
-      <h2 className='role-description'>Kelsey is a Junior Full-Stack Software Developer with a
-        background in Biological Sciences. She made the transition to
-        Software Development in 2024 and enjoys the challenge of learning
-        new programming concepts.
+      <h2 className='role-description'>Kelsey is a Junior Full-Stack Software Developer with a Bachelor of Science in Biological Sciences. She transitioned to Software Development in 2024 and thrives on the challenges of learning new programming concepts.
       </h2>
     </Box>
   );
