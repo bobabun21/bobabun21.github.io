@@ -56,6 +56,7 @@ h1, h2 {
   align-items: center;
   background-color: #d7dda2;
   border-radius: 30px;
+  font-family: 'Brandon Grotesque';
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -111,6 +112,7 @@ h1, h2 {
 }
 
 .name-header {
+  font-family: 'Palatino Linotype';
   grid-row: 1; 
   grid-column: 1; 
   text-align: center; 
@@ -124,6 +126,7 @@ h1, h2 {
   color: #642c1e;
   text-align: center;
   font-size: 30px;
+  font-family: 'Brandon Grotesque';
   width: 80%;
   padding: 30px;
   margin: auto;
