@@ -2,6 +2,7 @@ import WavingHandIcon from '@mui/icons-material/WavingHand';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { IconButton, Box } from '@mui/material';
 import React from 'react';
+import TimelineDialog from './timelineDialog';
 
 export default function AboutMe() {
   return (
@@ -9,6 +10,7 @@ export default function AboutMe() {
       <h1 className='name-header'>Kelsey Belanger</h1>
       <Box className='icon-container'>
         <IconButton className='button-highlight' aria-label='Learn more about Kelsey'>
+          <TimelineDialog />
           <WavingHandIcon className='waving-hand-icon' />
           <p>Learn more about Kelsey</p>
         </IconButton>

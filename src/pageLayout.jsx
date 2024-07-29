@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import AboutMe from './aboutMeSections';
 
-export default function ProfilePhoto({ photo }) {
+export default function PageLayout({ photo }) {
   return (
     <Box
       sx={{

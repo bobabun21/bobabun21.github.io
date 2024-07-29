@@ -1,12 +1,12 @@
 import './App.css';
 import React from 'react';
 import photo from './assets/profile-photo-web-page.JPG';
-import ProfilePhoto from './pageLayout';
+import PageLayout from './pageLayout';
 
 function App() {
   return (
     <div className='App'>
-      <ProfilePhoto photo={photo} />
+      <PageLayout photo={photo} />
     </div>
   );
 }
