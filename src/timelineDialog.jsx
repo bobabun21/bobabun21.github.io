@@ -38,7 +38,7 @@ export default function TimelineDialog() {
         open={open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id='customized-dialog-title'>
-          Modal title
+          About Me!
         </DialogTitle>
         <IconButton
           aria-label='close'
@@ -54,18 +54,16 @@ export default function TimelineDialog() {
         </IconButton>
         <DialogContent dividers>
           <Typography gutterBottom>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
+            Hi There! This dialog is under development right now. Please come
+            back later for more information! In the meantime, head on over to
+            my LinkedIn to connect with me! Any questions, comments, or suggestions
+            are much appreciated!
           </Typography>
           <Typography gutterBottom>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            Thanks!
           </Typography>
           <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-            ullamcorper nulla non metus auctor fringilla.
+            - Kelsey
           </Typography>
         </DialogContent>
       </BootstrapDialog>
