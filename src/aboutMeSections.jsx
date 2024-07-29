@@ -3,6 +3,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { IconButton, Box } from '@mui/material';
 import React from 'react';
 import TimelineDialog from './timelineDialog';
+import './App.css';
 
 export default function AboutMe() {
   return (

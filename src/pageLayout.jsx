@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import AboutMe from './aboutMeSections';
+import './App.css';
 
 export default function PageLayout({ photo }) {
   return (
