@@ -1,38 +1,218 @@
+/* Keyframes for animations */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  50% { transform: rotate(-20deg); }
+  75% { transform: rotate(20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes pulsate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* General styles */
+h1, h2 {
+  border-radius: 30px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
 .App {
-  text-align: center;
+  background-color: #a8ad77;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.about-me-container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 50px;
+  padding: 50px;
+}
+
+/* Buttons */
+.button-highlight,
+.button-wave {
+  display: inline-flex;
+  align-items: center;
+  background-color: #d7dda2;
+  border-radius: 30px;
+  font-family: 'Brandon Grotesque';
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: border-color 0.1s ease, border-width 0.1s ease;
+}
+
+.button-highlight:hover,
+.button-wave:hover {
+  border-color: #642c1e;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.button-highlight:hover .waving-hand-icon {
+  animation: wave 2s infinite;
+}
+
+.button-highlight:hover .linkedIn-icon {
+  animation: pulsate 3s infinite;
+}
+
+/* Icon container */
+.icon-container {
+  display: flex;
+  gap: 10px;
+}
+
+.linkedIn-icon,
+.waving-hand-icon {
+  font-size: medium;
+  padding: 10px;
+}
+
+/* MUI overrides */
+.MuiTouchRipple-root {
+  display: none !important;
+}
+
+.MuiButtonBase-root {
+  display: inline-flex !important;
+  background-color: #d7dda2 !important;
+  border-radius: 50px !important;
+  width: 50% !important;
+}
+
+/* Headers */
+.name-header {
+  font-family: 'Palatino Linotype';
+  grid-row: 1;
+  grid-column: 1;
+  text-align: center;
+  font-size: 70px;
   color: white;
+  background-color: #642c1e;
+  width: 800px;
 }
 
-.App-link {
-  color: #61dafb;
+.role-description {
+  grid-row: 2;
+  color: #642c1e;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Brandon Grotesque';
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: #ceac91;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive Design */
+
+/* Laptop screens (max-width: 1600px) */
+@media (max-width: 1600px) {
+  .name-header {
+    font-size: 50px;
+    width: 600px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .role-description {
+    font-size: 25px;
+    width: 75%;
+  }
+
+  .about-me-container {
+    padding: 40px;
+    gap: 40px;
+  }
+}
+
+/* Large Screens (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .name-header {
+    font-size: 60px;
+    width: 700px;
+  }
+
+  .role-description {
+    font-size: 25px;
+    width: 70%;
+  }
+}
+
+/* Medium Screens (max-width: 992px) */
+@media (max-width: 992px) {
+  .name-header {
+    font-size: 50px;
+    width: 600px;
+  }
+
+  .role-description {
+    font-size: 20px;
+    width: 60%;
+  }
+
+  .about-me-container {
+    padding: 30px;
+    gap: 30px;
+  }
+}
+
+/* Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .name-header {
+    font-size: 40px;
+    width: 500px;
+  }
+
+  .role-description {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .button-highlight,
+  .button-wave {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .MuiButtonBase-root {
+    width: 70% !important;
+  }
+}
+
+/* Extra Small Screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .name-header {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .role-description {
+    font-size: 16px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about-me-container {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .button-highlight,
+  .button-wave {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .MuiButtonBase-root {
+    width: 90% !important;
   }
 }
