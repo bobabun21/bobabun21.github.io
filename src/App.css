@@ -104,7 +104,7 @@ h1, h2 {
 .role-description {
   grid-row: 2;
   color: #642c1e;
-  text-align: left;
+  text-align: center;
   font-size: x-large;
   font-family: 'Brandon Grotesque';
   width: 80%;

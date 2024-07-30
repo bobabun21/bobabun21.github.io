@@ -45,8 +45,8 @@ export default function TimelineDialog() {
           onClick={handleClose}
           sx={{
             position: 'absolute',
-            right: 8,
-            top: 8,
+            right: 25,
+            top: 10,
             color: (theme) => theme.palette.grey[500]
           }}
         >
