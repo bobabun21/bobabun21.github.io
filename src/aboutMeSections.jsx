@@ -18,10 +18,10 @@ export default function AboutMe() {
           className='button-highlight'
         >
           <LinkedInIcon className='linkedIn-icon' />
-          Connect with Kelsey on LinkedIn
+          Connect with me on LinkedIn
         </Button>
       </Box>
-      <h2 className='role-description'>Kelsey is a Junior Full-Stack Software Developer with a Bachelor of Science in Biological Sciences. She transitioned to Software Development in 2024 and thrives on the challenges of learning new programming concepts.
+      <h2 className='role-description'>I{'\''}m a Junior Full-Stack Software Developer with a Bachelor of Science in Biological Sciences. I transitioned to Software Development in 2024 and thrive on the challenges of learning new programming concepts.
       </h2>
     </Box>
   );

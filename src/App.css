@@ -51,7 +51,7 @@ h1, h2 {
 
 .button-highlight:hover {
   border-color: #642c1e;
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
 }
 
@@ -104,8 +104,8 @@ h1, h2 {
 .role-description {
   grid-row: 2;
   color: #642c1e;
-  text-align: center;
-  font-size: 30px;
+  text-align: left;
+  font-size: x-large;
   font-family: 'Brandon Grotesque';
   width: 80%;
   padding: 30px;
