@@ -7,6 +7,7 @@ import DialogContent from '@mui/material/DialogContent';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import { WavingHand } from '@mui/icons-material';
 import './App.css';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -30,8 +31,9 @@ export default function TimelineDialog() {
 
   return (
     <>
-      <Button variant='outlined' onClick={handleClickOpen}>
-        Open dialog
+      <Button className='button-highlight' onClick={handleClickOpen}>
+        <WavingHand className='waving-hand-icon' />
+        Learn more about Kelsey
       </Button>
       <BootstrapDialog
         onClose={handleClose}
