@@ -1,4 +1,5 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { VolunteerActivism } from '@mui/icons-material';
 import { Button, Box } from '@mui/material';
 import React from 'react';
 import TimelineDialog from './timelineDialog';
@@ -19,6 +20,18 @@ export default function AboutMe() {
         >
           <LinkedInIcon className='linkedIn-icon' />
           Connect with me on LinkedIn
+        </Button>
+      </Box>
+      <Box className='donation-container'>
+        <Button
+          href='https://ko-fi.com/kelseybelanger'
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='Support Kelsey on Ko-Fi'
+          className='button-highlight'
+        >
+          <VolunteerActivism className='donation-icon' />
+          Support me!
         </Button>
       </Box>
       <h2 className='role-description'>I{'\''}m a Junior Full-Stack Software Developer with a Bachelor of Science in Biological Sciences. I transitioned to Software Development in 2024 and thrive on the challenges of learning new programming concepts.
