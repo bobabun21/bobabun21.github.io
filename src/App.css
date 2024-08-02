@@ -26,7 +26,7 @@ h1, h2 {
 
 .about-me-container {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr;
   width: 100%;
   height: 100%;
@@ -37,23 +37,21 @@ h1, h2 {
 }
 
 /* Buttons */
-.button-highlight,
-.button-wave {
+.button-highlight {
   display: inline-flex;
   align-items: center;
   background-color: #d7dda2;
   border-radius: 30px;
-  font-family: 'Brandon Grotesque';
+  font-family: 'Brandon Grotesque' !important;
   padding: 10px 20px;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
-  transition: border-color 0.1s ease, border-width 0.1s ease;
+  transition: border-color 0.1s ease;
 }
 
-.button-highlight:hover,
-.button-wave:hover {
+.button-highlight:hover {
   border-color: #642c1e;
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
 }
 
@@ -65,21 +63,35 @@ h1, h2 {
   animation: pulsate 3s infinite;
 }
 
-/* Icon container */
-.icon-container {
+.donation-container {
+  grid-row: 4; 
   display: flex;
-  gap: 10px;
+  justify-content: center;
 }
 
-.linkedIn-icon,
-.waving-hand-icon {
+.donation-icon {
   font-size: medium;
   padding: 10px;
 }
 
-/* MUI overrides */
-.MuiTouchRipple-root {
+.icon-container {
+  grid-row: 3; 
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
+}
+
+.linkedIn-icon,
+.waving-hand-icon,
+.donation-icon {
+  font-size: medium;
+  padding: 10px;
+}
+
+.MuiTouchRipple-root,
+.MuiButton-colorPrimary {
   display: none !important;
+  color: #642c1e !important;
 }
 
 .MuiButtonBase-root {
@@ -89,7 +101,6 @@ h1, h2 {
   width: 50% !important;
 }
 
-/* Headers */
 .name-header {
   font-family: 'Palatino Linotype';
   grid-row: 1;
@@ -105,7 +116,7 @@ h1, h2 {
   grid-row: 2;
   color: #642c1e;
   text-align: center;
-  font-size: 30px;
+  font-size: x-large;
   font-family: 'Brandon Grotesque';
   width: 80%;
   padding: 30px;
