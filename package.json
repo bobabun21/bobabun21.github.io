@@ -43,5 +43,11 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://kelseybelanger.com"
+  "homepage": "https://kelseybelanger.com",
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2"
+  }
 }
