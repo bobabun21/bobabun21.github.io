@@ -8,9 +8,7 @@ This is a portfolio highlighting my experiences and goals. This was built using 
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Project Structure](#project-structure)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact](#contact)
+6. [Contact](#contact)
 
 ## Features
 - Feature 1: Personal History (About Me Section)
